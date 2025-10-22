@@ -25,10 +25,10 @@ public class EnderecoEntrega : ValueObject
         Guard.AgainstNullOrWhiteSpace(cidade, nameof(cidade));
         Guard.AgainstNullOrWhiteSpace(pais, nameof(pais));
 
-        if (!Regex.IsMatch(cep, @"^\d{5}-?\d{3}$"))
+        if (!Regex.IsMatch(cep, @"^\d{5}-\d{3}$"))
             throw new DomainException("CEP inválido. Deve ser no formato 00000-000");
-        
-        Cep = cep;
+
+        Cep = cep!;
         Logradouro = logradouro;
         Complemento = complemento ?? String.Empty;
         Bairro = bairro;
@@ -54,7 +54,7 @@ public class EnderecoEntrega : ValueObject
         yield return Pais;
     }
 
-    public string FormatarCompleto()
+    public string FormatarEndereco()
     {
         return $"{Logradouro}, {Complemento} - {Bairro}, {Cidade} - {Estado}, {Pais} - CEP: {Cep}";
     }

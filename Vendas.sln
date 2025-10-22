@@ -2,11 +2,11 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DD6CD06A-9B56-4E6B-BE79-A82991635A45}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{65F44782-B7D4-4BFB-8D34-E98A1C9D82DA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendas.Domain", "Vendas.Domain\Vendas.Domain.csproj", "{4A0F30B7-2028-4C7E-8A6F-39F1970B0352}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendas.Domain.Tests", "Vendas.Domain.Tests\Vendas.Domain.Tests.csproj", "{E7CC89C0-1CEF-460F-A434-BD4EA62A0295}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2BC1F648-2018-427C-AECA-E07E73695D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vendas.Domain.Tests", "Vendas.Domain.Tests\Vendas.Domain.Tests.csproj", "{C2D97239-A27B-4050-90A8-2A726751D026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,16 +15,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4A0F30B7-2028-4C7E-8A6F-39F1970B0352} = {DD6CD06A-9B56-4E6B-BE79-A82991635A45}
-		{E7CC89C0-1CEF-460F-A434-BD4EA62A0295} = {65F44782-B7D4-4BFB-8D34-E98A1C9D82DA}
+		{C2D97239-A27B-4050-90A8-2A726751D026} = {2BC1F648-2018-427C-AECA-E07E73695D2F}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{4A0F30B7-2028-4C7E-8A6F-39F1970B0352}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4A0F30B7-2028-4C7E-8A6F-39F1970B0352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A0F30B7-2028-4C7E-8A6F-39F1970B0352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A0F30B7-2028-4C7E-8A6F-39F1970B0352}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7CC89C0-1CEF-460F-A434-BD4EA62A0295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7CC89C0-1CEF-460F-A434-BD4EA62A0295}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7CC89C0-1CEF-460F-A434-BD4EA62A0295}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7CC89C0-1CEF-460F-A434-BD4EA62A0295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D97239-A27B-4050-90A8-2A726751D026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D97239-A27B-4050-90A8-2A726751D026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D97239-A27B-4050-90A8-2A726751D026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D97239-A27B-4050-90A8-2A726751D026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

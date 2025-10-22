@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zN0d2sg3bZo=",
+  "dgSpecHash": "enOOypN/zYE=",
   "success": true,
-  "projectFilePath": "B:\\projetos\\Vendas\\Vendas.Domain.Tests\\Vendas.Domain.Tests.csproj",
+  "projectFilePath": "B:\\projetos\\Vendas\\Vendas.Domain.TestsNUnit\\Vendas.Domain.TestsNUnit.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sergio\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\fluentassertions\\8.7.1\\fluentassertions.8.7.1.nupkg.sha512",
