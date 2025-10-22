@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EbR12UTGcTE=",
+  "dgSpecHash": "zN0d2sg3bZo=",
   "success": true,
   "projectFilePath": "B:\\projetos\\Vendas\\Vendas.Domain.Tests\\Vendas.Domain.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sergio\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
+    "C:\\Users\\Sergio\\.nuget\\packages\\fluentassertions\\8.7.1\\fluentassertions.8.7.1.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",
     "C:\\Users\\Sergio\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.11.1\\microsoft.testplatform.objectmodel.17.11.1.nupkg.sha512",

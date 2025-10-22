@@ -16,6 +16,14 @@ internal static class Guard
             throw new DomainException($"{paramName} não pode ser nulo.");
     }
 
+    public static void AgainstNullOrWhiteSpace(string value, string paramName)
+    {
+        if (string.IsNullOrWhiteSpace(value))
+        {
+            throw new DomainException($"{paramName} não pode ser nulo ou vazio.");
+        }
+    }
+
     // Esse método é um método utilitário de validação com lançamento de exceção genérica, usado para proteger o domínio contra condições inválidas — uma prática comum em DDD chamada de Guard Clauses.
     
     // Against<TException> => Método genérico que permite informar qual exceção será lançada
