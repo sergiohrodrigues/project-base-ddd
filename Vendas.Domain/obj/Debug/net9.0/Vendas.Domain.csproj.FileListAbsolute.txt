@@ -1,0 +1,12 @@
+B:\projetos\Vendas\Vendas.Domain\bin\Debug\net9.0\Vendas.Domain.deps.json
+B:\projetos\Vendas\Vendas.Domain\bin\Debug\net9.0\Vendas.Domain.dll
+B:\projetos\Vendas\Vendas.Domain\bin\Debug\net9.0\Vendas.Domain.pdb
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.GeneratedMSBuildEditorConfig.editorconfig
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.AssemblyInfoInputs.cache
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.AssemblyInfo.cs
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.csproj.CoreCompileInputs.cache
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.sourcelink.json
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.dll
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\refint\Vendas.Domain.dll
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\Vendas.Domain.pdb
+B:\projetos\Vendas\Vendas.Domain\obj\Debug\net9.0\ref\Vendas.Domain.dll

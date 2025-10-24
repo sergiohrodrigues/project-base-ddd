@@ -59,4 +59,61 @@ public class EnderecoEntregaTests
         act.Should().Throw<DomainException>()
             .WithMessage("CEP inválido*");
     }
+
+    [Fact(DisplayName = "Dois EnderecosEntrega com os mesmos dados devem ser iguais (Value Object)")]
+    public void EnderecosDevemSerIguais_QuandoPossuemMesmosValores()
+    {
+        // Arrange
+        var endereco1 = EnderecoEntrega.Criar("12345-678", "Rua X", "Casa", "Centro", "SP", "São Paulo", "Brasil");
+        var endereco2 = EnderecoEntrega.Criar("12345-678", "Rua X", "Casa", "Centro", "SP", "São Paulo", "Brasil");
+        
+        // Asset 
+        endereco1.Should().Be(endereco2);
+        (endereco1 == endereco2).Should().BeTrue();
+    }
+
+    [Fact(DisplayName = "EnderecosEntrega devem ser diferentes quando algum campo for diferente")]
+    public void EnderecosDevemSerDiferentes_QuandoAlgumCampoForDiferente()
+    {
+        // Arrange
+        var endereco1 = EnderecoEntrega.Criar("12345-678", "Rua X", "Casa", "Centro", "SP", "São Paulo", "Brasil");
+        var endereco2 = EnderecoEntrega.Criar("12345-678", "Rua Y", "Casa", "Centro", "SP", "São Paulo", "Brasil");
+        
+        // Asset 
+        endereco1.Should().NotBe(endereco2);
+    }
+
+    [Fact(DisplayName = "EnderecoEntrega deve ser imutável após criação")]
+    public void EnderecoDevemSerImutavel_AposCriacao()
+    {
+        // Arrange
+        var endereco = EnderecoEntrega.Criar("12345-678", "Rua X", "Casa", "Centro", "SP", "São Paulo", "Brasil");
+        
+        // Act
+        Action act = () =>
+        {
+            //Tentativa hipotética (não compila, apelas conceitual)
+            // endereco.Cep = "99999-999";
+        };
+        
+        // Assert
+        endereco.GetType().GetProperties()
+            .All(p => p.SetMethod == null || p.SetMethod.IsPrivate)
+            .Should().BeTrue("as propriedades do VO devem ser imutáveis");
+    }
+
+    [Theory(DisplayName = "Deve lançar DomainException quando campos obrigatórios forem nulos ou vazios.")]
+    [InlineData(null, "Logradoudo", "Bairro", "Estado", "Cidade", "Pais")] // Cep nulo
+    [InlineData("12345-678", null, "Bairro", "Estado", "Cidade", "Pais")] // Logradouro nulo
+    [InlineData("12345-678", "Logradoudo", "Bairro", "Estado", "Cidade", null)] // Pais mulo
+    public void Criar_DeveLancarDomainException_QuandoCamposObrigatoriosNulosOuVazios(string cep, string logradouro,
+        string bairro, string estado, string cidade, string pais)
+    {
+        // Act
+        Action act = () => EnderecoEntrega.Criar(cep, logradouro, "Complemento", bairro, estado, cidade, pais);
+        
+        // Assert
+        act.Should().Throw<DomainException>()
+            .WithMessage("*não pode ser nulo ou vazio*");
+    }
 }
